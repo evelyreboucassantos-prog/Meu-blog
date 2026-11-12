@@ -1,1 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #b82ff3;
+    background-image: url('imagens/fundo-oncinha.jpg');
+    background-repeat: repeat;
+    color: #111111;
+    padding: 20px;
+}
+.main-header {
+    max-width: 750px;
+    margin: 0 auto 30px auto;
+    background-color: #000000;
+    color: #ffffff;
+    border: 4px solid #00ffff;
+    box-shadow: 8px 8px 0px #ff007f;
+    padding: 25px;
+    text-align: center;
+}
+
+.main-header h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+.posts-container {
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.post-card {
+    background-color: #ffffff;
+    border: 4px solid #000000;
+    box-shadow: 8px 8px 0px #000000;
+    padding: 20px;
+}
+
+.post-card h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    background-color: #ff007f;
+    color: #ffffff;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #000000;
+}
+.post-card img {
+    width: 100%;
+    height: auto;
+    border: 3px solid #000000;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.post-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.btn-like {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.75rem;
+    background-color: #e0e0e0;
+    color: #000000;
+    border: 3px solid #000000;
+    box-shadow: 4px 4px 0px #000000;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.btn-like:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #000000;
+}
+
+.btn-like.curtido {
+    background-color: #ff007f;
+    color: #ffffff;
+}
+
+footer {
+    max-width: 750px;
+    margin: 40px auto 10px auto;
+    background-color: #000000;
+    color: #00ffff;
+    border: 3px solid #00ffff;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+}

@@ -1,18 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
+    background-color: #b82ff3;
+    background-image: url('imagens/fundo-oncinha.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    padding: 20px;
+}
+.posts-container {
+    max-width: 750px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.post-card {
+    background-color: #ffffff;
+    border: 4px solid #000000;
+    box-shadow: 8px 8px 0px #000000;
+    padding: 20px;
+}
 
-background-color: #b82ff3;
+.post-card h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    background-color: #ff007f;
+    color: #ffffff;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #000000;
+}
+.post-card img {
+    width: 100%;
+    height: auto;
+    border: 3px solid #000000;
+    margin-bottom: 15px;
+    display: block;
+}
 
-background-image: 
-radial-gradient(#000000 20%, transparent 20);
+.post-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.btn-like {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.75rem;
+    background-color: #e0e0e0;
+    color: #000000;
+    border: 3px solid #000000;
+    box-shadow: 4px 4px 0px #000000;
+    padding: 10px 15px;
+    cursor: pointer;
+}
 
-background-size: 35px 35px;
-background-position: 0 0, 17px 17px;
+.btn-like:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #000000;
+}
 
-
-background-attachment: fixed;
-
-font-family: 'Poppins';
-color: #000000
-
-cursor: url("⋆"), auto;
+.btn-like.curtido {
+    background-color: #ff007f;
+    color: #ffffff;
+}
+footer {
+    max-width: 750px;
+    margin: 40px auto 10px auto;
+    background-color: #000000;
+    color: #00ffff;
+    border: 3px solid #00ffff;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
 }
